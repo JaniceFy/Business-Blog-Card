@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #F2F5F9;
+}
+
+.card{
+    background-color: #FFFFFF;
+    position: relative;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 100% #ccc;
+}
+
+main img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+main svg{
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    width: 100%;
+}
+
+main h1{
+    line-height: 1;
+    width: 350px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #111729;
+    font-size: 24px;
+}
+
+main p{
+    line-height: 1.3;
+    font-family: Lato, sans-serif;
+    color: #677489;
+    font-size: 16px;
+    padding: 20px 0px 20px 0px;
+}
+
+.main-text{
+    padding: 0px 30px 0px 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 30px 20px 25px;
+    gap: 15px;
+    border-top: 1px solid #E5EAF0;
+    font-family: Lato, sans-serif;
+    border-top: 10px 0px 0px 0px;
+}
+
+footer img{
+    border-radius: 90%;
+    border: 5px solid #F2F5F9;
+    width: 50px;
+}
+
+footer h2 {
+    color: #111729;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer small{
+    color: #677489;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/**/
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .card {
+        width: 90%; /* Dar un poco de margen a los lados */
+        padding: 10px; /* Agregar algo de padding interno */
+        box-shadow: 2px 10px 20px #ccc; /* Reducir el efecto de la sombra */
+    }
+
+    main h1 {
+        font-size: 18px; /* Reducir aún más el tamaño del texto */
+        text-align: center; /* Centrar el texto para pantallas pequeñas */
+    }
+
+    main p {
+        font-size: 14px; /* Mantener el tamaño reducido del texto */
+        padding: 10px 0px; /* Ajustar padding para menos espacio vertical */
+        text-align: justify; /* Mejor alineación del texto */
+    }
+
+    .main-text {
+        padding: 10px 20px; /* Reducir el padding en la sección de texto */
+    }
+
+    footer {
+        flex-direction: column; /* Cambiar disposición de elementos */
+        align-items: flex-start; /* Alineación a la izquierda */
+        padding: 10px 20px; /* Ajustar padding */
+        gap: 10px; /* Reducir espacio entre elementos */
+    }
+
+    footer img {
+        width: 35px; /* Reducir más el tamaño de la imagen */
+        border: 3px solid #F2F5F9; /* Ajustar borde */
+    }
+
+    footer h2 {
+        font-size: 14px; /* Ajustar tamaño de texto */
+    }
+
+    footer small {
+        font-size: 11px; /* Ajustar tamaño de texto */
+    }
+}
